@@ -11,7 +11,9 @@ st.title("📸 Camera & Audio Test")
 
 
 cam = st.camera_input("Take a photo")
+audio = st.audio_input("audio")
 
 if cam:
     st.success("Photo captured!")
     st.download_button("Download Photo", data=cam.read(), file_name="photo.png")
+
